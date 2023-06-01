@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6B4E6"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCreateLutemon"
+        android:layout_width="143dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="40dp"
+        android:onClick="switchToCreateNewLutemon"
+        android:text="Luo Lutemon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <Button
+        android:id="@+id/btnListLutemons"
+        android:layout_width="143dp"
+        android:layout_height="86dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="switchToListLutemonsActivity"
+        android:text="Minun Lutemonini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <Button
+        android:id="@+id/btnTrain"
+        android:layout_width="143dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:onClick="switchToTrainLutemon"
+        android:text="Kouluta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateLutemon" />
+
+    <Button
+        android:id="@+id/btnFigth"
+        android:layout_width="143dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="switchToFigthLutemons"
+        android:text="Taistele"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListLutemons" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="323dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#3A3838"
+        android:rotationX="29"
+        android:rotationY="-3"
+        android:text="LUTEMON"
+        android:textAlignment="center"
+        android:textColor="#FBF9F9"
+        android:textColorHighlight="#009688"
+        android:textSize="60sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/moreLutemons"
+        android:layout_width="305dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="450dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

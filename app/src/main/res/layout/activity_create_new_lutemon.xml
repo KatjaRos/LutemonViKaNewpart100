@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6B4E6"
+    tools:context=".CreateNewLutemon">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lutemonTypes"
+        android:layout_width="371dp"
+        android:layout_height="345dp"
+        android:layout_marginTop="20dp"
+        android:background="#F0EFF3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/lutemon_type"
+        android:layout_width="370dp"
+        android:layout_height="195dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lutemonTypes">
+
+        <RadioButton
+            android:id="@+id/btnMossMon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MossMon" />
+
+        <RadioButton
+            android:id="@+id/btnRediMon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RediMon" />
+
+        <RadioButton
+            android:id="@+id/btnBluMon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BluMon" />
+
+        <RadioButton
+            android:id="@+id/btnOranMon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OranMon" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/lutemonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#C6B4E6"
+        android:ems="10"
+        android:hint="Anna nimi"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lutemon_type" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="203dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="15dp"
+        android:onClick="addLutemon"
+        android:text="Tallenna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lutemonName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

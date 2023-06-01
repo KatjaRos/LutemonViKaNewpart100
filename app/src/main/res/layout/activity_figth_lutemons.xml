@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="#C6B4E6"
+    tools:context=".FigthLutemonsActivity">
+
+    <LinearLayout
+        android:layout_width="287dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+            android:id="@+id/lutemonToFigth1"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="60dp">
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/lutemonToFigth2"
+            android:layout_width="113dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="60dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/lutemon1"
+        android:layout_width="184dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="addFigther1"
+        android:text="Valitse Lutemon (1)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lutemon2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.312" />
+
+    <Button
+        android:id="@+id/lutemon2"
+        android:layout_width="184dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="addFigther2"
+        android:text="Valitse lutemon (2)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.312" />
+
+    <Button
+        android:id="@+id/startTheFigth"
+        android:layout_width="328dp"
+        android:layout_height="79dp"
+        android:onClick="startTheFigth"
+        android:text="Aloita taistelu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <ScrollView
+        android:layout_width="358dp"
+        android:layout_height="360dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTheFigth">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/showTheFigth"
+                android:layout_width="378dp"
+                android:layout_height="367dp"
+                android:inputType="textMultiLine"
+                android:singleLine="false" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="5dp"
+    android:background="#FEFEFF"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lut_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#C6B4E6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lut_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tyyppi" />
+
+        <TextView
+            android:id="@+id/health_xp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="terveys" />
+
+        <TextView
+            android:id="@+id/attack_xp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hyökkäys" />
+
+        <TextView
+            android:id="@+id/defence_xp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="puolustus" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
